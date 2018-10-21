@@ -1,36 +1,54 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+import * as styled from './index.css'
 
-class Item {
-    constructor(private name: string, private price: number, private stock: number) {
-    }
+interface ItemProps {
+    name: string
+    price: number
+    stock: number
 
-    isStockEmpty(): boolean {
-        return this.stock === 0;
-    }
+    isStockEmpty (): boolean
 }
 
-const ItemList = (props) => {
-    const items: Arrays<Item> = props.items;
-    return <ul className="item-list">
-        {props.items.map(item => <ItemDetail item={item}/>)}
-    </ul>;
-};
+class Item implements ItemProps {
+    name: string
+    price: number
+    stock: number
 
-const ItemDetail = (props) => {
-    const item: Item = props.item;
-    return <li className={'item' + item.stock === 0 ? ' soldout' : ''}>
-        <div className="item-name">{item.name}</div>
-        <div className="item-price">{item.price}</div>
-    </li>;
-};
+    constructor (name: string, price: number, stock: number) {
+        this.name = name
+        this.price = price
+        this.stock = stock
+    }
 
-const tes: any;
-tes.push(new Item('item1', 1, 0));
-tes.push(new Item('item2', 2, 2));
-tes.push(new Item('item3', 3, 3));
+    isStockEmpty (): boolean {
+        return this.stock === 0
+    }
+
+}
+
+const ItemList = (props: any) => {
+    return <ul className={styled.listContainer}>
+        {props.items.map((i: Item) => <ItemDetail item={i}/>)}
+    </ul>
+}
+
+const ItemDetail = (props: any) => {
+    return <li className={
+        styled.listItem.concat(' item')
+            .concat(props.item.isStockEmpty() ? ' soldout' : '')}>
+        <div className='item-name'>{props.item.name}</div>
+        <div className='item-price'>{props.item.price}</div>
+        <div className='item-stock'>{props.item.stock}</div>
+        <div className='item-stock'>{props.item.isStockEmpty().toLocaleString()}</div>
+    </li>
+}
+
+const tes = []
+tes.push(new Item('item1', 1, 0))
+tes.push(new Item('item2', 2, 2))
+tes.push(new Item('item3', 3, 3))
 
 ReactDOM.render(
-     <ItemList items={tes}/>,
-        document.getElementById('root'));
-
+    <ItemList items={tes}></ItemList>,
+    document.getElementById('root'))

@@ -1,5 +1,5 @@
 {
-    "extends": "tslint-config-airbnb",
+    "extends": "tslint-config-standard",
     "rules": {
         "ter-indent": [true, 4]
     }

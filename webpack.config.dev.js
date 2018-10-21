@@ -30,6 +30,30 @@ module.exports = {
                     // TypeScriptのコンパイル設定ファイル
                     configFile: 'tsconfig.dev.json'
                 }
+            },
+            // cssのloader設定(今less使ってないからlessはいらんかも)
+            {
+                test: /\.(css|less)$/,
+                exclude: /node_modules/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: "css-loader",
+                        options: {
+                            importLoaders: 1,
+                            modules: true,
+                            localIdentName: '[name]--[local]--[hash:base64:5]',
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'typed-css-modules-loader',
+                        options: {
+                            camelCase: true,
+                            searchDir: './src',
+                        }
+                    }
+                ]
             }
         ]
     },
