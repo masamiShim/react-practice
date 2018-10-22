@@ -44,11 +44,40 @@ const ItemDetail = (props: any) => {
     </li>
 }
 
+const Header = () => {
+    return <header className={styled.header}>
+        <nav>
+            <ul>
+                <li><a href='#'>menu1</a></li>
+                <li><a href='#'>menu2</a></li>
+                <li><a href='#'>menu3</a></li>
+                <li><a href='#'>menu4</a></li>
+            </ul>
+        </nav>
+    </header>
+}
+
+const Footer = () => {
+    return <footer className={styled.footer}>Footer</footer>
+}
+
+const Content = (props: any) => {
+    return <div className={styled.content}>{props.contents}</div>
+}
+
 const tes = []
 tes.push(new Item('item1', 1, 0))
 tes.push(new Item('item2', 2, 2))
 tes.push(new Item('item3', 3, 3))
 
 ReactDOM.render(
-    <ItemList items={tes}></ItemList>,
-    document.getElementById('root'))
+    <Content contents={<ItemList items={tes}/>}/>,
+    document.getElementById('content'))
+
+ReactDOM.render(
+    <Header/>,
+    document.getElementById('header'))
+
+ReactDOM.render(
+    <Footer/>,
+    document.getElementById('footer'))
