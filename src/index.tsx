@@ -37,6 +37,19 @@ const ItemDetail = (props: any) => {
     return <li className={
         styled.listItem.concat(' item')
             .concat(props.item.isStockEmpty() ? ' soldout' : '')}>
+        <dl className={styled.listCategory}>
+            <dt className={styled.listSkillLabel}>language</dt>
+            <dd className={styled.itemSkill}>Java</dd>
+        </dl>
+        <dl className={styled.listCategory}>
+            <dt className={styled.listFrameworkLabel}>language</dt>
+            <dd className={styled.itemFramework}>Java</dd>
+        </dl>
+        <dl className={styled.listCategory}>
+            <dt className={styled.listToolLabel}>language</dt>
+            <dd className={styled.itemTool}>Java</dd>
+        </dl>
+        <label ></label>
         <div className='item-name'>{props.item.name}</div>
         <div className='item-price'>{props.item.price}</div>
         <div className='item-stock'>{props.item.stock}</div>
@@ -48,10 +61,10 @@ const Header = () => {
     return <header className={styled.header}>
         <nav>
             <ul>
-                <li><a href='#'>menu1</a></li>
-                <li><a href='#'>menu2</a></li>
-                <li><a href='#'>menu3</a></li>
-                <li><a href='#'>menu4</a></li>
+                <li><a href='#'><span>menu1</span></a></li>
+                <li><a href='#'><span>menu2</span></a></li>
+                <li><a href='#'><span>menu3</span></a></li>
+                <li><a href='#'><span>menu4</span></a></li>
             </ul>
         </nav>
     </header>

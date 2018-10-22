@@ -26,8 +26,17 @@ nav > ul > li > a {
     height: 100%;
 }
 
+
 nav > ul > li > a:hover {
     background: #ddd;
+}
+
+
+nav > ul > li > a > span {
+    position: relative;
+    top: 25%;
+    bottom: 25%;
+
 }
 
 .header {
@@ -85,9 +94,75 @@ nav > ul > li > a:hover {
 
 .listContainer {
     border: 1px solid black;
+    list-style: none;
+    background: whitesmoke;
+    padding: 50px;
+}
+.listCategory{
+    background: #fff;
 }
 
+.itemSkill{
+    background: #000;
+}
+.listSkillLabel{
+    border: 1px solid #bb66d0;
+    color: #bb66d0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    min-width: 120px;
+    z-index: 10;
+    box-shadow: 0 0 12px gray;
+}
+.listFrameworkLabel{
+    border: 1px solid #bb66d0;
+    color: #bb66d0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    min-width: 120px;
+    z-index: 10;
+    box-shadow: 0 0 12px gray;
+}
+.itemFramework{
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    width: fit-content;
+    border: 1px dotted black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.listToolLabel{
+    border: 1px solid #bb66d0;
+    color: #bb66d0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    min-width: 120px;
+    z-index: 10;
+    box-shadow: 0 0 12px gray;
+}
+
+.itemTool{
+    background: #000;
+}
 .listItem {
-    background: #dedede;
+    position: relative;
+    padding: 10px;
+    top: 10px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 15px -10px;
+    background: #fff;
+    z-index: 3;
+    border-radius: 3px;
+
 }
 
