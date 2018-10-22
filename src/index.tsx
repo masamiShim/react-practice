@@ -1,6 +1,8 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import * as styled from './index.css'
+import Header from './layout/header'
+import Footer from './layout/footer'
 
 interface ItemProps {
     name: string
@@ -37,41 +39,37 @@ const ItemDetail = (props: any) => {
     return <li className={
         styled.listItem.concat(' item')
             .concat(props.item.isStockEmpty() ? ' soldout' : '')}>
-        <dl className={styled.listCategory}>
-            <dt className={styled.listSkillLabel}>language</dt>
-            <dd className={styled.itemSkill}>Java</dd>
-        </dl>
-        <dl className={styled.listCategory}>
-            <dt className={styled.listFrameworkLabel}>language</dt>
-            <dd className={styled.itemFramework}>Java</dd>
-        </dl>
-        <dl className={styled.listCategory}>
-            <dt className={styled.listToolLabel}>language</dt>
-            <dd className={styled.itemTool}>Java</dd>
-        </dl>
-        <label ></label>
-        <div className='item-name'>{props.item.name}</div>
-        <div className='item-price'>{props.item.price}</div>
-        <div className='item-stock'>{props.item.stock}</div>
-        <div className='item-stock'>{props.item.isStockEmpty().toLocaleString()}</div>
+        <section className={styled.portfolioItem}>
+            <div className={styled.skillContainer}>
+                <dl className={styled.listCategory}>
+                    <dt className={styled.listSkillLabel}>language</dt>
+                    <dd className={styled.itemSkill}>Java</dd>
+                    <dd className={styled.itemSkill}>HTML</dd>
+                    <dd className={styled.itemSkill}>CSS</dd>
+                </dl>
+                <dl className={styled.listCategory}>
+                    <dt className={styled.listFrameworkLabel}>Framework</dt>
+                    <dd className={styled.itemFramework}>Springboot</dd>
+                    <dd className={styled.itemFramework}>scss</dd>
+                    <dd className={styled.itemFramework}>JavaEE7</dd>
+                </dl>
+                <dl className={styled.listCategory}>
+                    <dt className={styled.listToolLabel}>Tools</dt>
+                    <dd className={styled.itemTool}>Java</dd>
+                </dl>
+            </div>
+            <div>
+                <dl>
+                    <dt>プロジェクト名</dt>
+                    <dd>あああ</dd>
+                </dl>
+                <dl>
+                    <dt>内容</dt>
+                    <dd>いい</dd>
+                </dl>
+            </div>
+        </section>
     </li>
-}
-
-const Header = () => {
-    return <header className={styled.header}>
-        <nav>
-            <ul>
-                <li><a href='#'><span>menu1</span></a></li>
-                <li><a href='#'><span>menu2</span></a></li>
-                <li><a href='#'><span>menu3</span></a></li>
-                <li><a href='#'><span>menu4</span></a></li>
-            </ul>
-        </nav>
-    </header>
-}
-
-const Footer = () => {
-    return <footer className={styled.footer}>Footer</footer>
 }
 
 const Content = (props: any) => {
@@ -84,13 +82,16 @@ tes.push(new Item('item2', 2, 2))
 tes.push(new Item('item3', 3, 3))
 
 ReactDOM.render(
-    <Content contents={<ItemList items={tes}/>}/>,
+    <Content contents={<ItemList items={tes}/>}/>
+    ,
     document.getElementById('content'))
 
 ReactDOM.render(
-    <Header/>,
+    <Header/>
+    ,
     document.getElementById('header'))
 
 ReactDOM.render(
-    <Footer/>,
+    <Footer/>
+    ,
     document.getElementById('footer'))
