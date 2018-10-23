@@ -1,0 +1,140 @@
+.listContainer {
+    list-style: none;
+    background: whitesmoke;
+    padding: 50px;
+}
+
+.listCategory {
+    background: #fff;
+}
+.listCategory:not(:first-child) {
+    margin-top: 20px;
+}
+
+
+.listSkillLabel {
+    margin-bottom: 12px;
+    border: 2px solid #bb66d0;
+    color: #bb66d0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    min-width: 120px;
+    z-index: 10;
+}
+
+.itemSkill {
+    display: inline-flex;
+    margin-left: 0;
+    color: #fff;
+    background: #bb66d0;
+    border-radius: 10px;
+    border: 1px solid #a857bc80;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.listFrameworkLabel {
+    margin-bottom: 12px;
+    border: 2px solid #66d0c7;
+    color: #66d0c7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    min-width: 120px;
+    z-index: 10;
+}
+
+.itemFramework {
+    display: inline-flex;
+    margin-left: 0;
+    color: #fff;
+    background: #66d0c7;
+    border-radius: 10px;
+    border: 1px solid #18918773;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.listToolLabel {
+    margin-bottom: 12px;
+    border: 2px solid #c2a413;
+    color: #c2a413;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    min-width: 120px;
+    z-index: 10;
+}
+
+.itemTool {
+    display: inline-flex;
+    margin-left: 0;
+    color: #fff;
+    background: #c2a413;
+    border-radius: 10px;
+    border: 1px solid #b094109c;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.listItem {
+    position: relative;
+    padding: 10px;
+    top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 8px gray;
+    background: #fff;
+    z-index: 3;
+    border-radius: 3px;
+}
+
+.skillContainer {
+}
+
+.portfolioItem {
+
+}
+.projectLabel {
+    margin-bottom: 12px;
+    border: 2px solid #565656;
+    background: #565656;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    min-width: 120px;
+    z-index: 10;
+}
+
+.projectDetail {
+    margin-bottom: 12px;
+    border: 2px solid #565656;
+    background: #fff;
+    color: #565656;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    min-width: 120px;
+    z-index: 10;
+}

@@ -1,5 +1,7 @@
 body {
     margin: 20px;
+    font-family: Arial, "メイリオ", serif;
+    color: #454545;
 }
 
 .content {
@@ -17,105 +19,4 @@ body {
     .content {
         width: 380px;
     }
-}
-
-.listContainer {
-    border: 1px solid black;
-    list-style: none;
-    background: whitesmoke;
-    padding: 50px;
-}
-
-.listCategory {
-    background: #fff;
-    width: 30%;
-}
-
-.listCategory:not(:last-child) {
-    margin-right: 1.5%;
-}
-
-.listSkillLabel {
-    margin-bottom: 12px;
-    border: 2px solid #bb66d0;
-    color: #bb66d0;
-    border-radius: 8px;
-    text-align: center;
-    padding: 5px;
-    width: fit-content;
-    min-width: 120px;
-    z-index: 10;
-    box-shadow: 0 0 12px gray;
-}
-
-.itemSkill {
-    display: inline-flex;
-    margin-left: 0;
-    color: #fff;
-    background: #bb66d0;
-    border-radius: 20px;
-    border: 1px solid black;
-    padding: 5px;
-    width: fit-content;
-}
-
-.listFrameworkLabel {
-    margin-bottom: 12px;
-    border: 1px solid #66d0c7;
-    color: #66d0c7;
-    border-radius: 8px;
-    text-align: center;
-    padding: 5px;
-    width: fit-content;
-    min-width: 120px;
-    z-index: 10;
-    box-shadow: 0 0 12px gray;
-}
-
-.itemFramework {
-    display: inline-flex;
-    margin-left: 0;
-    color: #fff;
-    background: #66d0c7;
-    border-radius: 20px;
-    border: 1px solid black;
-    padding: 5px;
-    width: fit-content;
-}
-
-.listToolLabel {
-    border: 1px solid #bb66d0;
-    color: #bb66d0;
-    border-radius: 8px;
-    text-align: center;
-    padding: 5px;
-    width: fit-content;
-    min-width: 120px;
-    z-index: 10;
-    box-shadow: 0 0 12px gray;
-}
-
-.itemTool {
-    margin-left: 0;
-    background: #000;
-}
-
-.listItem {
-    position: relative;
-    padding: 10px;
-    top: 10px;
-    margin-bottom: 50px;
-    border: 1px solid black;
-    box-shadow: 10px 10px 15px -10px;
-    background: #fff;
-    z-index: 3;
-    border-radius: 3px;
-}
-
-.skillContainer {
-    display: flex;
-}
-
-.portfolioItem {
-
 }
