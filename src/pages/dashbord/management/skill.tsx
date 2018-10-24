@@ -1,11 +1,11 @@
+/*
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import * as styled from './index.css'
-import Header from './layout/header'
-import Footer from './layout/footer'
-import { Item, ItemList } from './components/index/skillCategory'
-import { Language } from './api/models/Portfolio'
-import { SkillRepository } from './api/repositories/SkillRepository'
+import * as styled from './skill.css'
+import Header from '/src/layout/header'
+import Footer from '/src/layout/footer'
+import {Language} from './api/models/Portfolio'
+import {SkillRepository} from './api/repositories/SkillRepository'
 
 const Content = (props: any) => {
     return <div className={styled.content}>{props.contents}</div>
@@ -13,13 +13,8 @@ const Content = (props: any) => {
 
 const skills: Array<Language> = SkillRepository.findAll()
 
-const tes = []
-tes.push(new Item('item1', 1, 0))
-tes.push(new Item('item2', 2, 2))
-tes.push(new Item('item3', 3, 3))
-
 ReactDOM.render(
-    <Content contents={ <ItemList items={tes}/> }/>,
+    <Content contents={<ItemList items={tes}/>}/>,
     document.getElementById('content'))
 
 ReactDOM.render(
@@ -36,3 +31,4 @@ ReactDOM.render(
     <div>{skills.map((s: Language) => <div>{s.getName()}</div>)} </div>
     ,
     document.getElementById('test'))
+*/

@@ -73,11 +73,8 @@ const ItemDetail = (props: any) => {
             <div>
                 <dl>
                     <dt className={styled.projectLabel}><strong>Project</strong></dt>
-                    <dd>あああ</dd>
-                </dl>
-                <dl>
-                    <dt className={styled.projectDetail}>Detail</dt>
-                    <dd>いい</dd>
+                    <dd className={styled.projectTitle}>あああ</dd>
+                    <dd className={styled.projectDetail}>いい</dd>
                 </dl>
             </div>
         </section>

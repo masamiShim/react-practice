@@ -1,25 +1,21 @@
 .listContainer {
     list-style: none;
-    background: whitesmoke;
     padding: 50px;
 }
 
 .listCategory {
     background: #fff;
 }
+
 .listCategory:not(:first-child) {
     margin-top: 20px;
 }
 
-
 .listSkillLabel {
     margin-bottom: 12px;
-    border: 2px solid #bb66d0;
-    color: #bb66d0;
-    border-radius: 8px;
-    text-align: center;
+    border-bottom: 1px solid #bb66d070;
+    color: #bb66d0bd;
     padding: 5px;
-    width: fit-content;
     min-width: 120px;
     z-index: 10;
 }
@@ -27,27 +23,22 @@
 .itemSkill {
     display: inline-flex;
     margin-left: 0;
-    color: #fff;
-    background: #bb66d0;
+    color: #9606b9d1;
     border-radius: 10px;
-    border: 1px solid #a857bc80;
-    padding: 5px 10px;
+    border: 1px solid #9606b970;
+    padding: 3px 8px;
     width: fit-content;
     margin-right: 10px;
     margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.1em;
 }
 
 .listFrameworkLabel {
     margin-bottom: 12px;
-    border: 2px solid #66d0c7;
-    color: #66d0c7;
-    border-radius: 8px;
-    text-align: center;
+    border-bottom: 1px solid #66d0c770;
+    color: #66d0c7bd;
     padding: 5px;
-    width: fit-content;
     min-width: 120px;
     z-index: 10;
 }
@@ -55,27 +46,23 @@
 .itemFramework {
     display: inline-flex;
     margin-left: 0;
-    color: #fff;
-    background: #66d0c7;
+    color: #0cbdafd1;
     border-radius: 10px;
-    border: 1px solid #18918773;
-    padding: 5px 10px;
+    border: 1px solid #0cbdaf70;
+    padding: 3px 8px;
     width: fit-content;
     margin-right: 10px;
     margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.1em;
 }
 
 .listToolLabel {
+    text-align: left;
     margin-bottom: 12px;
-    border: 2px solid #c2a413;
-    color: #c2a413;
-    border-radius: 8px;
-    text-align: center;
+    border-bottom: 1px solid #c2a41370;
+    color: #c2a413bd;
     padding: 5px;
-    width: fit-content;
     min-width: 120px;
     z-index: 10;
 }
@@ -83,22 +70,20 @@
 .itemTool {
     display: inline-flex;
     margin-left: 0;
-    color: #fff;
-    background: #c2a413;
+    color: #ab8e05d1;
     border-radius: 10px;
-    border: 1px solid #b094109c;
-    padding: 5px 10px;
+    border: 1px solid #b0941070;
+    padding: 3px 8px;
     width: fit-content;
     margin-right: 10px;
     margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.1em;
 }
 
 .listItem {
     position: relative;
-    padding: 10px;
+    padding: 40px;
     top: 10px;
     margin-bottom: 50px;
     box-shadow: 0 0 8px gray;
@@ -113,28 +98,25 @@
 .portfolioItem {
 
 }
+
 .projectLabel {
     margin-bottom: 12px;
-    border: 2px solid #565656;
-    background: #565656;
-    color: #fff;
-    border-radius: 8px;
-    text-align: center;
-    padding: 5px;
-    width: fit-content;
+    border-bottom: 1px solid #56565670;
+    color: #565656bd;
+    padding-bottom: 5px;
     min-width: 120px;
     z-index: 10;
 }
 
-.projectDetail {
-    margin-bottom: 12px;
-    border: 2px solid #565656;
-    background: #fff;
-    color: #565656;
-    border-radius: 8px;
-    text-align: center;
-    padding: 5px;
-    width: fit-content;
-    min-width: 120px;
-    z-index: 10;
+.projectTitle {
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
 }
+
+.projectDetail {
+    margin-left: 1em;
+    font-size: 12px;
+}
+
