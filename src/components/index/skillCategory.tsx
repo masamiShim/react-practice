@@ -31,12 +31,12 @@ export class Item implements ItemProps {
 
 export const ItemList = (props: any) => {
     return <ul className={styled.listContainer}>
-        {props.items.map((i: Item) => <ItemDetail item={i}/>)}
+        {props.items.map((i: Item) => <ItemDetail key={i.name} item={i}/>)}
     </ul>
 }
 
 const ItemDetail = (props: any) => {
-    return <li className={
+    return <li key={props.item.name} className={
         styled.listItem.concat(' item')
             .concat(props.item.isStockEmpty() ? ' soldout' : '')}>
         <section className={styled.portfolioItem}>
