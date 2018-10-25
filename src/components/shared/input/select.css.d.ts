@@ -1,1 +1,1 @@
-export const selectContainer: string
+export const selectWrapper: string;
