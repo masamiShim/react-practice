@@ -26,8 +26,8 @@ ReactDOM.render(
 
 ReactDOM.render(
     <Select options={Category.convertSelecInputHelper().getOptions()} name={'skill.name'} selectedVal={null}/>,
-    document.getElementById('sel')
-)
+    document.getElementById('sel'))
+
 ReactDOM.render(
     <Header/>
     ,
@@ -37,7 +37,3 @@ ReactDOM.render(
     <Footer/>
     ,
     document.getElementById('footer'))
-// ReactDOM.render(
-// <div>{skills.map((s: Language) => <div>{s.getName()}</div>)} </div>
-// ,
-// document.getElementById('test'))

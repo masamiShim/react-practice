@@ -28,6 +28,7 @@ select:-moz-focusring {
 
 .selectWrapper {
     max-width: 200px;
+    min-width: 200px;
     position: relative;
     background-color: #fff;
     -webkit-border-radius: 8px;

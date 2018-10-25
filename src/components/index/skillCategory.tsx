@@ -35,20 +35,32 @@ export const ItemList = (props: any) => {
     </ul>
 }
 
+export const ItemDd = (props: any) => {
+    return <dd className={props.style}>{props.content}</dd>
+}
+let languages: Array<string> = new Array<string>()
+languages.push('Java')
+languages.push('HTML')
+languages.push('CSS')
+languages.push('javascript')
+
+export const SkillList = (props: any) => {
+    return <dl className={styled.listCategory}>
+        <dt className={props.labelStyle}><strong>{props.labelTitle}</strong></dt>
+        {props.items.map((i: string) => <ItemDd style={props.itemStyle} content={i}/>)}
+    </dl>
+}
+
 const ItemDetail = (props: any) => {
     return <li key={props.item.name} className={
         styled.listItem.concat(' item')
             .concat(props.item.isStockEmpty() ? ' soldout' : '')}>
         <section className={styled.portfolioItem}>
             <div className={styled.skillContainer}>
-                <dl className={styled.listCategory}>
-                    <dt className={styled.listSkillLabel}><strong>language / IDE</strong></dt>
-                    <dd className={styled.itemSkill}>Java</dd>
-                    <dd className={styled.itemSkill}>HTML</dd>
-                    <dd className={styled.itemSkill}>CSS</dd>
-                    <dd className={styled.itemSkill}>eclipse</dd>
-                    <dd className={styled.itemSkill}>IntelliJ</dd>
-                </dl>
+                <SkillList labelStyle={styled.listSkillLabel}
+                           labelTitle={'language / IDE'}
+                           itemStyle={styled.itemSkill}
+                           items={languages}/>
                 <dl className={styled.listCategory}>
                     <dt className={styled.listFrameworkLabel}><strong>Framework / DB</strong></dt>
                     <dd className={styled.itemFramework}>Springboot</dd>
