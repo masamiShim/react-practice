@@ -1,4 +1,4 @@
-export class SelectItem {
+export class SelectOption {
     readonly code: number
     readonly name: string
 
@@ -17,13 +17,13 @@ export class SelectItem {
 }
 
 export class SelectInputHelper {
-    readonly options: Array<SelectItem>
+    readonly options: Array<SelectOption>
 
-    constructor (options: Array<SelectItem>) {
+    constructor (options: Array<SelectOption>) {
         this.options = options
     }
 
-    getOptions (): Array<SelectItem> {
+    getOptions (): Array<SelectOption> {
         return this.options
     }
 }
