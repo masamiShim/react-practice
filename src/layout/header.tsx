@@ -11,10 +11,9 @@ class Header extends React.Component {
             <header className={styled.header}>
                 <nav>
                     <ul>
-                        <li><a href='#'><span>menu1</span></a></li>
-                        <li><a href='#'><span>menu2</span></a></li>
-                        <li><a href='#'><span>menu3</span></a></li>
-                        <li><a href='#'><span>menu4</span></a></li>
+                        <li><a href='#'><span>Portfolio</span></a></li>
+                        <li><a href='#'><span>Management</span></a></li>
+                        <li><a href='#'><span>Skills</span></a></li>
                     </ul>
                 </nav>
             </header>

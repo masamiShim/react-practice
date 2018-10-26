@@ -26,7 +26,6 @@ export class Item implements ItemProps {
     isStockEmpty (): boolean {
         return this.stock === 0
     }
-
 }
 
 export const ItemList = (props: any) => {
@@ -38,11 +37,29 @@ export const ItemList = (props: any) => {
 export const ItemDd = (props: any) => {
     return <dd className={props.style}>{props.content}</dd>
 }
-let languages: Array<string> = new Array<string>()
+
+let languages: Array<string> = []
 languages.push('Java')
 languages.push('HTML')
 languages.push('CSS')
 languages.push('javascript')
+
+let frameworks: Array<string> = []
+frameworks.push('springBoot')
+frameworks.push('scss')
+frameworks.push('jQuery')
+frameworks.push('JavaEE7')
+frameworks.push('SQLServer')
+frameworks.push('redis')
+let tools: Array<string> = []
+tools.push('gulp')
+tools.push('docker')
+tools.push('git')
+tools.push('bitbucket')
+tools.push('confluence')
+tools.push('SSMS')
+tools.push('Hinemos')
+tools.push('JP1')
 
 export const SkillList = (props: any) => {
     return <dl className={styled.listCategory}>
@@ -61,26 +78,14 @@ const ItemDetail = (props: any) => {
                            labelTitle={'language / IDE'}
                            itemStyle={styled.itemSkill}
                            items={languages}/>
-                <dl className={styled.listCategory}>
-                    <dt className={styled.listFrameworkLabel}><strong>Framework / DB</strong></dt>
-                    <dd className={styled.itemFramework}>Springboot</dd>
-                    <dd className={styled.itemFramework}>scss</dd>
-                    <dd className={styled.itemFramework}>JavaEE7</dd>
-                    <dd className={styled.itemFramework}>jquery</dd>
-                    <dd className={styled.itemFramework}>SQLServer</dd>
-                    <dd className={styled.itemFramework}>Redis</dd>
-                </dl>
-                <dl className={styled.listCategory}>
-                    <dt className={styled.listToolLabel}><strong>Tools</strong></dt>
-                    <dd className={styled.itemTool}>gulp</dd>
-                    <dd className={styled.itemTool}>docker</dd>
-                    <dd className={styled.itemTool}>git</dd>
-                    <dd className={styled.itemTool}>bitbucket</dd>
-                    <dd className={styled.itemTool}>confluence</dd>
-                    <dd className={styled.itemTool}>SSMS</dd>
-                    <dd className={styled.itemTool}>Hinemos</dd>
-                    <dd className={styled.itemTool}>JP1</dd>
-                </dl>
+                <SkillList labelStyle={styled.listFrameworkLabel}
+                           labelTitle={'Framework / DB'}
+                           itemStyle={styled.itemFramework}
+                           items={frameworks}/>
+                <SkillList labelStyle={styled.listToolLabel}
+                           labelTitle={'Tools'}
+                           itemStyle={styled.itemTool}
+                           items={tools}/>
             </div>
             <div>
                 <dl>

@@ -5,7 +5,9 @@ nav > ul {
     margin: 0;
     padding: 0;
     height: 100%;
+    line-height: 2em;
     list-style: none;
+    border-bottom: 1px solid #fff;
 }
 
 nav > ul > li {
@@ -17,13 +19,15 @@ nav > ul > li {
 
 nav > ul > li > a {
     text-decoration: none;
-    background: #fff;
+    font-family: "Palatino Linotype", serif;
+    font-size: 1.2em;
+    color: #eee;
     width: 100%;
     height: 100%;
 }
 
 nav > ul > li > a:hover {
-    background: #ddd;
+    font-size: 1.5em;
 }
 
 nav > ul > li > a > span {
@@ -36,7 +40,7 @@ nav > ul > li > a > span {
 .header {
     position: relative;
     top: 0;
-    background: #dedede;
+    background: transparent;
     margin: 0 auto 20px auto;
     width: 680px;
     height: 50px;
