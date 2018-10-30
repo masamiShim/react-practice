@@ -1,5 +1,6 @@
 import * as styled from './header.css'
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
     constructor (props: Readonly<any>) {
@@ -11,9 +12,11 @@ class Header extends React.Component {
             <header className={styled.header}>
                 <nav>
                     <ul>
-                        <li><a href='#'><span>Portfolio</span></a></li>
-                        <li><a href='#'><span>Management</span></a></li>
-                        <li><a href='#'><span>Skills</span></a></li>
+                        <li><Link to='/'>Portfolio</Link>
+                        </li>
+                        <li><Link to='/management'>Management</Link>
+                        </li>
+                        <li><Link to='/skill'>Skills</Link></li>
                     </ul>
                 </nav>
             </header>

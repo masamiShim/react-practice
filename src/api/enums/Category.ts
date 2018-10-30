@@ -20,7 +20,7 @@ namespace Category {
         }
     }
 
-    export function convertSelecInputHelper (): SelectInputHelper {
+    export function convertSelectInputHelper (): SelectInputHelper {
         let options: Array<SelectOption> = new Array<SelectOption>()
         for (let c in Category) {
             const cInt = parseInt(Category[c], 10)

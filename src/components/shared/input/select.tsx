@@ -3,9 +3,10 @@ import * as styled from './select.css'
 import { SelectOption } from '../../helper/SelectInputHelper'
 
 export const Select = (props: any) => {
-    return <div className={styled.selectWrapper}>
+    return <div className={ styled.selectWrapper }>
         <select name={props.name}>
-            {props.options.map((i: SelectOption) => <SelectFormItem key={i.name} option={i} electedVal={props.selectedVal}/>)}
+            {props.options.map((i: SelectOption) => <SelectFormItem key={i.name} option={i}
+                                                                    selectedVal={props.selectedVal}/>)}
         </select>
     </div>
 }

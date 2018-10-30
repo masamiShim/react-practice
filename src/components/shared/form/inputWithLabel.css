@@ -1,0 +1,21 @@
+.container {
+    display: table;
+    width: 100%;
+}
+.label{
+    width: fit-content;
+    color: #fff;
+}
+.labelContainer{
+    display: table-cell;
+    text-align: right;
+    width: 25%;
+    padding-right: 5%;
+    min-width: 150px;
+
+}
+.inputContainer{
+    display: table-cell;
+    width: 70%;
+    min-width: 200px;
+}
